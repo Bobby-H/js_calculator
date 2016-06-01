@@ -15,23 +15,20 @@ function subtract(number){
 }
 
 function multiply(number){
-  if (total === 0) {
-    total = numbers[0];
-  } else if (number === 0){
-    numbers.pop();
-  } else {
-    total *= number;
-  }
-  return total;
+  return performOperation("*", number);
 }
 
 function divide(number){
+  return performOperation("/", number);
+}
+
+function performOperation(operator, number){
   if (total === 0) {
     total = numbers[0];
   } else if (number === 0){
     numbers.pop();
   } else {
-    total /= number;
+    total = eval(total + operator + number);
   }
   return total;
 }
