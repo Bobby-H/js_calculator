@@ -22,6 +22,10 @@ function divide(number){
   return performOperation("/", number);
 }
 
+function divide_by_quotient(divide, number) {
+  performOperation/number;
+}
+
 function performOperation(operator, number){
   if (total === 0) {
     total = numbers[0];
