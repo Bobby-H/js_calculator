@@ -24,6 +24,7 @@ function divide(number){
 
 function divide_by_quotient(divide, number) {
   performOperation/number;
+  return
 }
 
 function performOperation(operator, number){
